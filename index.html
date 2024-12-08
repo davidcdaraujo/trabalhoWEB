@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa de Apostas</title>
+    <link rel="stylesheet" href="CSS/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">BetHouse</h1>
+        <nav class="nav">
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#sports">Slots</a></li>
+            <li><a href="#slots">Crash</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="auth-buttons">
+          <a href="login.html" class="button"
+            ><button class="btn login">Entrar</button></a
+          >
+          <a href="cadastrar.html" class="button"
+            ><button class="btn signup">Cadastre-se</button></a
+          >
+          <a href="depositar.html" class="button"
+            ><button class="btn deposito">Depositar</button></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section id="home" class="hero">
+        <div class="container">
+          <h2>Aposte com Confiança!</h2>
+          <p>Os melhores odds e promoções exclusivas para você.</p>
+          <button class="btn primary">Comece a Apostar</button>
+        </div>
+      </section>
+
+      <section id="sports" class="section">
+        <div class="container">
+          <h3>Esportes em Alta</h3>
+          <div class="cards">
+            <div class="card">
+              <h4>Futebol</h4>
+              <p>Partidas ao vivo e odds atualizadas.</p>
+            </div>
+            <div class="card">
+              <h4>Basquete</h4>
+              <p>Desafie sua intuição no basquete!</p>
+            </div>
+            <div class="card">
+              <h4>FIFA24</h4>
+              <p>Para amantes de jogos eletronicos.</p>
+            </div>
+            <div class="card">
+              <h4>Tênis</h4>
+              <p>Seja rápido nas suas apostas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div id="slots" class="slots">Slots</div>
+        <div class="carousel">
+          <div class="item">
+            <img src="imagens/fortunetiger.jpg" width="200" height="120" />
+          </div>
+          <div class="item">
+            <img src="imagens/fortuneox.jpg" width="200" height="120" />
+          </div>
+          <div class="item">
+            <img src="imagens/fortunerabbit.jpg" width="200" height="120" />
+          </div>
+          <div class="item">
+            <img src="imagens/ageofegypt.jpg" width="200" height="120" />
+          </div>
+          <div class="item">
+            <img src="imagens/GatesOfOlympus.jpg" width="200" height="120" />
+          </div>
+          <div class="item">
+            <img src="imagens/countryfarming.jpg" width="200" height="120" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="crash">Crash</div>
+        <div class="carousel">
+          <div class="item">
+            <img src="imagens/aviator.jpg" width="200" height="120" />
+          </div>
+          <div class="item">
+            <img src="imagens/luva.jpg" width="200" height="120" />
+          </div>
+          <div class="item">
+            <img src="imagens/spaceman.jpg" width="200" height="120" />
+          </div>
+          <div class="item">
+            <img src="imagens/jetx.jpg" width="200" height="120" />
+          </div>
+          <div class="item">
+            <img src="imagens/highflyer.jpg" width="200" height="120" />
+          </div>
+          <div class="item">
+            <img src="imagens/longball.jpg" width="200" height="120" />
+          </div>
+        </div>
+      </div>
+      <section id="promotions" class="container">
+        <h2>Promoções</h2>
+        <button id="show-promotions">Confira Agora</button>
+        <div id="modal" class="modal">
+          <p>Ganhe bônus ao se cadastrar e aposte mais!</p>
+          <ul>
+            <li>Desconto de 10% no primeiro cadastro</li>
+            <li>Bônus de 20 reais no primeiro depósito</li>
+          </ul>
+        </div>
+        <script>
+          const showButton = document.getElementById("show-promotions");
+          const modal = document.getElementById("modal");
+
+          showButton.addEventListener("click", () => {
+            modal.classList.toggle("show");
+          });
+        </script>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 BetHouse. Todos os direitos reservados.</p>
+        <p>
+          <a href="termosdeuso.html">Termos de Uso</a> |
+          <a href="#privacy">Política de Privacidade</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
